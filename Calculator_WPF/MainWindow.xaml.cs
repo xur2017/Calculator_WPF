@@ -198,15 +198,23 @@ namespace Calculator_WPF
             {
                 case "+":
                     txtDisplay.Text = (number1 + number2).ToString();
+                    number1 = number1 + number2;
+                    number2 = 0;
                     break;
                 case "-":
                     txtDisplay.Text = (number1 - number2).ToString();
+                    number1 = number1 - number2;
+                    number2 = 0;
                     break;
                 case "*":
                     txtDisplay.Text = (number1 * number2).ToString();
+                    number1 = number1 * number2;
+                    number2 = 0;
                     break;
                 case "/":
                     txtDisplay.Text = (number1 / number2).ToString();
+                    number1 = number1 / number2;
+                    number2 = 0;
                     break;
             }
         }
